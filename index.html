@@ -1,72 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jose Faburrieta Practice Portfolio</title>
-        <link rel= "stylesheet" href="./assets/style.css">
+        <link rel= "stylesheet" href="./sources/style.css">
     </head>
     <body>
         
-        <header class= "header">
-            <h1>JA the FABURRIETA</h1>
-            <nav class = "nav-bar">
-                <ul>
-                    <li>
-                        <a href = "#first-project"> First Project</a>
-                    </li>
-                    <li>
-                        <a href= "#live-sites">Live Sites</a>
-                    </li>
-                    <li>
-                        <a href="#scultptures">Sculptures</a>
-                    </li>
-                    <li>
-                        <a href= "#short-stories">Short Stories</a>
-                    </li>
-                    <li>
-                        <a href= "#skate-sessions">Skate Sessions</a>
-                    </li>
-                </ul>
+        <header >
+            <h1 >MULTIMEDIA TONES</h1>
+            <nav >
+                 <a  href = "#bio">About Me</a>
+                
+                 <a href = "#work-display">Work</a>
+                 
+                 <a href= "#contact-info">Contact Info</a>
             </nav>
-         </header>
-        <section  id= "bio">
+        </header>
+
+        <section class= "profile-picture">
+            <h2> PROFILE PICTURE</h2>
+            <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
+        </section>
+
+        <section  id= "bio" class = "bio-box">
             <h2>ABOUT ME</h2>
             <p>
-                This is the about me portion of the webpage and to be honest I'm making it up as I go along
-                I have a general idea about what I'm doing but its not super clear. Either way I'm aiming for the 
-                mock up site layout. We got this.
+               My name is J.A. Faburrieta and am currently working on becoming a web developer.
+               Experince with the subject is thin but it has been one of my favorite practices ever
+               since college.  Along with progaming I enjoy sculpting and writing in my free time and 
+               the hope is that I will be able to combine these passions in an online format.
             </p>
         </section>
-        <main>
-            <section id= "first-project">
-                <h3> FIRST PROJECT</h3>
-                <img src= "sources/images/sigmund-first-project-stock-photo.jpg"/>
-            </section>
 
-            <section id = "live-sites">
-                <h3> LIVE SITES </h3>
-                <img src= "sources/images/ilya-pavlov-live-sites-stock-photo.jpg"/>
-            </section>
-
-            <section id= "sculptures">
-                <h3> SCULPTURES </h3>
-                <img src= "sources/images/alex-jones-scultpture-stock-photo.jpg"/>
-            </section>
-
-            <section id= "short-stories">
-                <h3> SHORT STORIES </h3>
-                <img src= "sources/images/aaron-burden-short-stories-stock-photo.jpg"/>
-            </section>
-
-            <section id= "skate-sessions">
-                <h3> SKATE SESSIONS </h3>
-                <img src = "sources/images/arif-maulana-skate-sessions-stock-photo.jpg"/>
+        <main  id =  "work-display" class ="core-content">
+            <h2>WORK</h2>
+           
+            <section class= "project-container">
+                <div class= "project-card" id= "first-project">
+                    <h3> FIRST PROJECT</h3>
+                    <img src= "sources/images/sigmund-first-project-stock-photo.jpg"/>
+                </div>
+            
+                <div class= "project-card">
+                    <h3> LIVE SITES </h3>
+                    <img src= "sources/images/ilya-pavlov-live-sites-stock-photo.jpg"/>
+                </div>
+            
+                <div class= "project-card">
+                    <h3> SCULPTURES </h3>
+                    <img src= "sources/images/alex-jones-scultpture-stock-photo.jpg"/>
+                </div>
+            
+                <div class= "project-card">
+                    <h3> SHORT STORIES </h3>
+                    <img src= "sources/images/aaron-burden-short-stories-stock-photo.jpg"/>
+                </div>
+            
+                <div class= "project-card">
+                    <h3> SKATE SESSIONS </h3>
+                    <img src = "sources/images/arif-maulana-skate-sessions-stock-photo.jpg"/>
+                </div>
             </section>
 
         </main>
-
+        <footer id= "contact-info" class = "end-page-footer">
+            <h2> CONTACT INFO </h2>
+            <section>
+                <a  href = "#bio">About Me</a>
+                
+                <a href = "#work-display">Work</a>
+                
+                <a href= "#contact-info">Contact Me</a>
+            </section> 
+        </footer>
         
     
     </body>

@@ -1,0 +1,195 @@
+:root{
+    --softblue: rgb(146,204,205);
+    --darkblue: rgb(68,88,118);
+    --currentgrey: rgb(49,52,61);
+    --backgroundwhite: rgb(237,237,246);
+
+}
+/*Header section contains the navigation bar and title for the page*/
+    header
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        flex-basis: 100%;
+        background-color: var(--currentgrey);
+    }
+
+    header  h1
+    {
+        padding-left: 5%;
+        background-color: var(--softblue);
+        padding-right: .5%;
+        margin-right: 2.5%;
+    }
+
+    header nav 
+    {
+        flex-direction: row;
+        margin-right: 2.5%;
+    }
+
+    header nav a
+    {
+        margin-right: 15px;
+        color: var(--softblue);
+        text-decoration: none;
+        padding: 5px;
+        border-bottom: 3px solid var(--softblue);
+    }
+
+/*spacing*/
+
+/*This section holdst the subheader wich should be a hidden profile picture*/
+    .profile-picture 
+    {
+        display: flex;
+        flex-basis: 100%;
+        background-image: url(images/pawel-czerwinski-background-pattern.jpg);
+        background-size: cover ;
+    }
+
+    .profile-picture h2
+    {
+        order: 2;
+        color: var(--darkblue);
+        padding: 5px;
+        border-radius: 2px;
+        margin-left: 10px;
+        align-self: flex-end;
+        background:var(--softblue);
+
+    }
+
+    .profile-picture img
+    {
+        margin: 10px 5px 10px 35%;
+        border: 5px solid var(--softblue);
+        border-radius: 15px;
+        max-width: 30%;   
+    }
+
+/*spacing*/
+
+/*This section holds the about me portion of the portfolio*/
+    .bio-box
+    {
+        display: flex;
+        justify-content:space-between;
+    }
+
+    .bio-box h2
+    {
+        flex-basis: 30px;
+        padding: 0px 15px 5px  10%;
+        color: var(--darkblue);
+        text-align: right;
+
+    }
+
+    .bio-box p
+    {
+        border-left: 5px solid var(--darkblue);
+        height: 100%;
+        padding-left: 20px;
+        color: var(--darkblue);
+    }
+
+/*spacing*/
+
+
+
+/*This section holds the main section of the site with images representing the projects*/
+    .core-content
+    {
+        display:flex;
+    }
+
+    .core-content h2
+    {
+        flex-basis: 30px;
+        padding: 0px 20px 0px 10%;
+        color: var(--darkblue);
+    }
+    .core-content section
+    {
+        display: flex;
+        flex-wrap: wrap;
+        border-left: 5px solid var(--darkblue);
+        height: 100%;
+        padding-left: 2.5%;
+    }
+
+    .core-content .project-card 
+    {
+        position: relative;
+        display:inline-block;
+    }
+    .core-content  .project-card img
+    {
+        display: block;
+        border: 5px solid var(--softblue);
+        width:300px;
+        height: 275px;
+        margin: 15px;
+    }
+
+    .core-content .project-card h3
+    {
+        background-color: var(--softblue);
+        color:var(--currentgrey);
+        position: absolute;
+        top: 75%;
+        margin-left: 15px;
+        padding-left: 15px;
+    }
+
+    .core-content #first-project 
+    {
+        flex-basis: 75%;
+        
+    }
+
+/*spacing*/
+
+/*This Section should contian most of the information for the footer file.*/
+    .end-page-footer
+    {
+        display: flex ;
+        text-align: right;
+        align-items: center;
+
+    }
+
+    .end-page-footer h2
+    {
+        flex-basis: 30px;
+        flex-wrap: wrap;
+        color: var(--darkblue);
+        padding: 15px 20px 15px  7%;
+    }
+
+    .end-page-footer section
+    {
+        display: flex;
+        flex-basis: 70%;
+        justify-content: space-evenly;
+        border-left: 5px solid var(--darkblue);
+        padding: 25px;
+    }
+
+    .end-page-footer section a 
+    {
+        text-decoration: none;
+        padding: 5px;
+        border-bottom: 3px solid var(--darkblue);
+    }
+
+/*spacing*/
+
+body
+{
+    max-width: 1280px;
+    background-color: var(--backgroundwhite);
+}
