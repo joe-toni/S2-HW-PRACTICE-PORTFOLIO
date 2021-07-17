@@ -1,11 +1,21 @@
-:root{
-    --softblue: rgb(146,204,205);
-    --darkblue: rgb(68,88,118);
-    --currentgrey: rgb(49,52,61);
-    --backgroundwhite: rgb(237,237,246);
+/*This portion of the css file sets up the initial colors that will be used as well as the starting layout for the body of the site*/
+    :root{
+        --softblue: rgb(146,204,205);
+        --darkblue: rgb(68,88,118);
+        --currentgrey: rgb(49,52,61);
+        --backgroundwhite: rgb(237,237,246);
+    }
 
-}
-/*Header section contains the navigation bar and title for the page*/
+    body
+    {
+        margin: 0 auto;
+        max-width: 1280px;
+        background-color: var(--backgroundwhite);
+    }
+
+/*spacing*/
+
+/*This is the header section contains the navigation bar and title for the page*/
     header
     {
         display: flex;
@@ -148,6 +158,7 @@
 
     .core-content  .project-container .project-card h3 a 
     {
+        color: var(--darkblue);
         text-decoration: none;
     }
   
@@ -185,9 +196,9 @@
         padding: 25px;
     }
 
-    .end-page-footer section a 
-    {
-        color: var(--darkblue);
+    .end-page-footer section p 
+    {  
+        color:var(--darkblue);
         text-decoration: none;
         padding: 5px;
         border-bottom: 3px solid var(--darkblue);
@@ -195,17 +206,13 @@
 
 /*spacing*/
 
-body
-{
-    margin: 0 auto;
-    max-width: 1280px;
-    background-color: var(--backgroundwhite);
-}
-
-@media only screen and (max-width: 780px) 
-{
-    .core-content .project-container .project-card
+/*This media query determins how the project cards will adjust when the screen is manipulated into a smaller size*/
+    @media only screen and (max-width: 780px) 
     {
-        flex: 0 0 82.22%;
-    }   
-}
+        .core-content .project-container .project-card
+        {
+            flex: 0 0 82.22%;
+        }   
+    }
+
+/*spacing*/
