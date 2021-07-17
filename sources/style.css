@@ -13,6 +13,7 @@
         align-items: center;
         justify-content: space-between;
         flex-basis: 100%;
+        height: 150px;
         background-color: var(--currentgrey);
     }
 
@@ -26,6 +27,7 @@
 
     header nav 
     {
+        padding-left: 25px;
         flex-direction: row;
         margin-right: 2.5%;
     }
@@ -58,18 +60,18 @@
         border-radius: 2px;
         margin-left: 10px;
         align-self: flex-end;
+        justify-self: right ;
         background:var(--softblue);
 
     }
 
     .profile-picture img
-    {
+    {        
         margin: 10px 5px 10px 35%;
         border: 5px solid var(--softblue);
         border-radius: 15px;
         max-width: 30%;   
     }
-
 /*spacing*/
 
 /*This section holds the about me portion of the portfolio*/
@@ -81,8 +83,9 @@
 
     .bio-box h2
     {
+        align-self: center;
         flex-basis: 30px;
-        padding: 0px 15px 5px  10%;
+        padding: 0px 15px 0px 63px;
         color: var(--darkblue);
         text-align: right;
 
@@ -92,13 +95,11 @@
     {
         border-left: 5px solid var(--darkblue);
         height: 100%;
-        padding-left: 20px;
+        padding: 10px 0px 10px 20px;
         color: var(--darkblue);
     }
 
 /*spacing*/
-
-
 
 /*This section holds the main section of the site with images representing the projects*/
     .core-content
@@ -109,47 +110,52 @@
     .core-content h2
     {
         flex-basis: 30px;
-        padding: 0px 20px 0px 10%;
+        padding: 15px 15px 15px 69px;
         color: var(--darkblue);
     }
-    .core-content section
+    .core-content .project-container 
     {
         display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         border-left: 5px solid var(--darkblue);
         height: 100%;
-        padding-left: 2.5%;
+        padding: 10px 10px 10px 25px;
+       
     }
 
-    .core-content .project-card 
+    .core-content .project-container .project-card
     {
-        position: relative;
-        display:inline-block;
-    }
-    .core-content  .project-card img
-    {
-        display: block;
+        display: flex;
+        width:350px;
+        height: 250px;
+        background-size: cover;
         border: 5px solid var(--softblue);
-        width:300px;
-        height: 275px;
-        margin: 15px;
+        margin: 0 0 10px 10px;
+        flex: 0 0 40%;
     }
 
-    .core-content .project-card h3
+    .core-content .project-container .project-card  h3 
     {
-        background-color: var(--softblue);
-        color:var(--currentgrey);
-        position: absolute;
-        top: 75%;
-        margin-left: 15px;
-        padding-left: 15px;
+        align-self: flex-end;
+        text-align: center;
+        flex-basis: 25%;
+        height:auto;
+        padding: 15px;
+        background: var(--softblue);
+
     }
 
-    .core-content #first-project 
+    .core-content  .project-container .project-card h3 a 
     {
-        flex-basis: 75%;
-        
+        text-decoration: none;
     }
+  
+    .core-content .project-container  #first-project 
+    {
+        flex:0 0 82.22%;
+    }
+
 
 /*spacing*/
 
@@ -167,7 +173,7 @@
         flex-basis: 30px;
         flex-wrap: wrap;
         color: var(--darkblue);
-        padding: 15px 20px 15px  7%;
+        padding: 15px 15px 15px  30px;
     }
 
     .end-page-footer section
@@ -181,6 +187,7 @@
 
     .end-page-footer section a 
     {
+        color: var(--darkblue);
         text-decoration: none;
         padding: 5px;
         border-bottom: 3px solid var(--darkblue);
@@ -190,6 +197,15 @@
 
 body
 {
+    margin: 0 auto;
     max-width: 1280px;
     background-color: var(--backgroundwhite);
+}
+
+@media only screen and (max-width: 780px) 
+{
+    .core-content .project-container .project-card
+    {
+        flex: 0 0 82.22%;
+    }   
 }
