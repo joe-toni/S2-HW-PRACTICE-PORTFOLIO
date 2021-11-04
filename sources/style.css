@@ -8,6 +8,7 @@
 
 body
     {
+        background-color: var(--backgroundwhite);
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -23,7 +24,7 @@ header
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        height: 200px;
+        height: 300px;
         width: 100%;
         background-color: var(--currentgrey);
     }
@@ -58,12 +59,14 @@ header
 .bio
     {
         display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        height: 350px;
+        height: 300px;
         width: 100%;
         background-image: url(images/pawel-czerwinski-background-pattern.jpg);
         background-size: cover ;
+    }
+    .mini
+    {
+        height: 100px;
     }
     .bio h2
         {
@@ -76,26 +79,37 @@ header
             padding: 0 20px 0 50px;
             color: var(--darkblue);
             background-color: var(--softblue);
+            border-radius: 0 15px 15px 0;
+        }
+        .bio h2:hover
+        {
+            cursor: pointer;
         }
     .bio p
         {
-            padding: 5px;
-            margin: 0 0 0 50px;
-            height: 150px;
-            width: 350px;
+            color: var(--softblue);
+            text-align: center;
+            margin: 0 auto 0 50px;
+            align-self: flex-start;
+            display: flex;
+            align-items: center;
+            height:290px;
+            width: 600px;
             border-radius: 15px;
+            background-color: var(--darkblue);
             border: 5px solid var(--darkblue);
             
         }
     .bio img
             {
-                margin: auto 0;
-                margin-left: -300px;
-                align-self: flex-start;
                 height: 250px;
                 border-radius: 15px;
                 border: 5px solid var(--softblue);
             }
+    .bio .hideMe
+    {
+        display: none;
+    }
 /*Bio Section End*/
 
 main
@@ -148,7 +162,7 @@ main
             grid-column: 1/3;
             grid-row: 1/3;
         }
-/*Basic Main Section End*/        
+    /*Initial Main Section End*/        
     .project-card
         {
             display: flex;
@@ -174,18 +188,24 @@ main
                 border-radius: 0 0 15px 0;
                 background-color: var(--softblue);
             }
+        .project-info p
+            {
+                width: 90%;
+            }
         .hideInfo
-        {
-            display: none;
-        }
-        
+            {
+                display: none;
+            }
+    /*Project Card Section End*/
+/*Main Section End*/
 
 
 
 
-footer
+
+            footer
     {
-        background-color: var(--backgroundwhite);
+        margin-top: 10px;
     }
     footer h2
     {

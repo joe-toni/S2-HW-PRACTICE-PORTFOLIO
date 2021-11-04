@@ -13,58 +13,66 @@
             <h2> MULTIMEDIA DEVELOPER</h2>
             </div>
             <nav >
-                 <a  href = "#bio">About Me</a>
+                 <a  href = "#biography" onclick="expand()">About Me</a>
                  <a href = "#work_display">Work</a>
-                 <a href= "#contact_info">Personal Info</a>
+                 <a href= "#personal_info">Personal Info</a>
             </nav>
         </header>
 
-        <section class= "bio">
-            <h2>ABOUT ME</h2>
-            <p>
+        <section id = "biography" class= "bio mini">
+            <h2 onclick="expand()">ABOUT ME</h2>
+            <p class = "aboutMe hideMe">
                My name is J.A. Faburrieta and am currently working on becoming a web developer.
                Experience with the subject is thin but it has been one of my favorite practices ever
                since college.  Along with progaming I enjoy sculpting and writing in my free time and 
                the hope is that I will be able to combine these passions in a programing format. 
+                <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
             </p>
-            <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
         </section>
 
-        <main class ="core_content">
+        <main id = "work_display" class ="core_content">
             <h2> WORK</h2>
             <div class= "project-container">
 
-                <div class= "project-card first-project" onclick="focusProject(firstProject, Info[0])">
+                <div  class= "project-card first-project" onclick="focusProject(firstProject, Info[0])">
                     <div class ="project-info hideInfo">
                         <h3>FIRST PROJECT</h3>
-                        <p>This is were the  project Description will be placed
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis saepe repellendus quae, ipsum, cumque ad odio eius optio reprehenderit magni quas? In ea laborum dicta tempore sequi ipsum eaque beatae?
+                        <p>This project was a collaborative work that was aimed at creating an app that would assist a user in planning
+                            potential road trips by providing weather infomation along a route and a planner tool for keeping track of tasks 
+                            that needed to be done before, during and after the trip.
                         </p>
-                        <a href="https://lordlowdar.github.io/thereandback/">Live Site</a>
-                        <a href="https://lordlowdar.github.io/thereandback/">App Repo</a>
+                        <a href="https://lordlowdar.github.io/thereandback/">Link to Live Site</a>
+                        <a href="https://github.com/joe-toni/thereandback">Link to App Repo</a>
                     </div>
                 </div>
             
                 <div class= "project-card day-planner" onclick="focusProject(dayPlanner, Info[1])">
                     <div class="project-info hideInfo">
                         <h3>DAY PLANNER</h3>
-                        <p>This is were the project Description will be placed and won't be anything too elaborate</p>
+                        <p>This app was an assignment that would allow a user to save notes on planned activities though out the day.
+                            It would correctly determine the time of day to color code which segments were either past, present, or future.
+                            The app was also able to persist user entries through site reloads.
+                        </p>
                         <a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Live Site</a>
-                        <a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Site Repo</a>
+                        <a href= "https://github.com/joe-toni/S5-HW-WORK-DAY-PLANNER" >Link to Site Repo</a>
                     </div> 
                 </div>
 
                 <div class= "project-card weather-dashboard" onclick="focusProject(weatherDash, Info[2])">
                     <div class= "project-info hideInfo">
                     <h3>WEATHER DASHBOARD</h3>
-                    <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">&gtLink to Live Site</a>
-                    <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">&gtLink to Site Repo</a>                    
+                    <p>This app was an assignment that would allow the user to perform a very basic location search by name in order 
+                        to get and display the weather for said location. It would display the current conditions as well as a slightly simpler
+                        5 day forcast. It would also persist search user search history and display it in a scrollable div. 
+                    </p>
+                    <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">Link to Live Site</a>
+                    <a href= "https://github.com/joe-toni/S6-HW-WEATHER-DASHBOARD">Link to Site Repo</a>                    
                         </div>
                     </div>
             </div>
         </main>
 
-        <footer id= "contact-info" class = "end-page-footer">
+        <footer id= "personal_info" class = "end-page-footer">
             <h2> CONTACT INFO </h2>
             <div class = "personal_links">
                 <a href = "mailto:joefaburrieta@gmail.com">joefaburrieta@gmail.com</a>
