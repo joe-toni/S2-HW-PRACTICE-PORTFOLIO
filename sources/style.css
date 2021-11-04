@@ -113,7 +113,7 @@ main
             height: 30px;
             color: var(--darkblue);
             border-bottom: 5px solid var(--darkblue);
-        }
+        }   
     .project-container
         {
             display:grid;
@@ -123,49 +123,74 @@ main
             row-gap: 10px;
             width: 100%;
             height: 650px;
+        }  
+    .first-project
+        {
+            background-image: url(./images/There_And_Back_Original_Screenshot.png);
+            grid-column: 1/ 3;
+            grid-row: 1/2;
         }
-        .project-container div
+    .day-planner
+        {
+            background-image: url(./images/Work_Day_Scheduler_Original_Screenshot.png);
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+    .weather-dashboard
+        {
+            background-image: url(./images/Weather_Dashboard_Original_Screenshot.png);
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+    .focused
+        {
+            z-index: 10;
+            grid-column: 1/3;
+            grid-row: 1/3;
+        }
+/*Basic Main Section End*/        
+    .project-card
+        {
+            display: flex;
+            border-radius: 5px;
+            border: 10px solid var(--darkblue);
+            background-size: cover;
+        }
+        .project-card:hover
             {
-                display: flex;
-                border-radius: 5px;
-                border: 10px solid var(--darkblue);
-                background-size: cover;
+                cursor: pointer;
             }
-        .project-container div h3
+        .project-info
             {
-                align-self: flex-end;
-                padding: 10px;
-                width: fit-content;
-                color: var(--softblue);
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                width: 250px;
+                height: 400px;
+                align-self: flex-start;
+                border: 5px solid var(--darkblue);
+                border-radius: 0 0 15px 0;
                 background-color: var(--softblue);
             }
-        #first-project
-            {
-                z-index: 1;
-                grid-column: 1/ 3;
-                grid-row: 1/3;
-            }
-        #day-planner
-            {
-                grid-column: 1/2;
-                grid-row: 2/3;
-            }
-        #weather-dashboard
-            {
-                grid-column: 2/3;
-                grid-row: 2/3;
-            }
+        .hideInfo
+        {
+            display: none;
+        }
         
-/*Main Section End*/
+
+
+
 
 footer
     {
-        border-top: 5px solid var(--currentgrey)
+        background-color: var(--backgroundwhite);
     }
     footer h2
     {
         text-align: center;
-        margin: 30px auto 0 auto;
+        margin: 30px auto 20px auto;
         width: 250px;
         height: 30px;
         color: var(--darkblue);
@@ -173,10 +198,11 @@ footer
     }
     footer div
         {
+            padding: 20px 0 50px 0;
             display: flex;
             justify-content: space-around;
         }
-    footer div p 
+    footer div a 
         {
             color:var(--darkblue);  
             border-bottom: 3px solid var(--darkblue);

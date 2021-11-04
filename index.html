@@ -30,34 +30,50 @@
             <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
         </section>
 
-        <main  id ="work_display" class ="core_content">
+        <main class ="core_content">
             <h2> WORK</h2>
             <div class= "project-container">
-                <div style=  "background-image: url(sources/images/There_And_Back_Original_Screenshot.png);"
-                     class= "project-card" id= "first-project">
-                    <h3><a href="https://lordlowdar.github.io/thereandback/"> FIRST PROJECT</a> </h3> 
+
+                <div class= "project-card first-project" onclick="focusProject(firstProject, Info[0])">
+                    <div class ="project-info hideInfo">
+                        <h3>FIRST PROJECT</h3>
+                        <p>This is were the  project Description will be placed
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis saepe repellendus quae, ipsum, cumque ad odio eius optio reprehenderit magni quas? In ea laborum dicta tempore sequi ipsum eaque beatae?
+                        </p>
+                        <a href="https://lordlowdar.github.io/thereandback/">Live Site</a>
+                        <a href="https://lordlowdar.github.io/thereandback/">App Repo</a>
+                    </div>
                 </div>
             
-                <div style=  "background-image: url(sources/images/Work_Day_Scheduler_Original_Screenshot.png);"
-                    class= "project-card" id = "day-planner">
-                    <h3><a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >DAY PLANNER</a></h3> 
+                <div class= "project-card day-planner" onclick="focusProject(dayPlanner, Info[1])">
+                    <div class="project-info hideInfo">
+                        <h3>DAY PLANNER</h3>
+                        <p>This is were the project Description will be placed and won't be anything too elaborate</p>
+                        <a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Live Site</a>
+                        <a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >Link to Site Repo</a>
+                    </div> 
                 </div>
 
-                <div style=  "background-image: url(sources/images/Weather_Dashboard_Original_Screenshot.png);"
-                    class= "project-card" id= "weather-dashboard">
-                    <h3> <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">WEATHER DASHBOARD</a></h3> 
-                </div>
+                <div class= "project-card weather-dashboard" onclick="focusProject(weatherDash, Info[2])">
+                    <div class= "project-info hideInfo">
+                    <h3>WEATHER DASHBOARD</h3>
+                    <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">&gtLink to Live Site</a>
+                    <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">&gtLink to Site Repo</a>                    
+                        </div>
+                    </div>
             </div>
         </main>
 
         <footer id= "contact-info" class = "end-page-footer">
             <h2> CONTACT INFO </h2>
             <div class = "personal_links">
-                <p>123-456-0789</p>
-                <p>joefaburrieta@gmail.com</p>               
+                <a href = "mailto:joefaburrieta@gmail.com">joefaburrieta@gmail.com</a>
+                <a href = "https://github.com/joe-toni">GitHub</a>
+                <a href = "https://www.linkedin.com/in/jose-faburrieta-48b857212/">Linkedin</a>
+                <a href= "https://drive.google.com/file/d/1AUyfUWBZNiwaqJ5h2-C7XvqXXp1qOmHi/view?usp=sharing">Resume</a>
             </div>
         </footer>
         
-    
+    <script src = "sources/script.js"></script>
     </body>
 </html>
