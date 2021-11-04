@@ -1,212 +1,189 @@
-/*This portion of the css file sets up the initial colors that will be used as well as the starting layout for the body of the site*/
-    :root{
-        --softblue: rgb(146,204,205);
-        --darkblue: rgb(68,88,118);
-        --currentgrey: rgb(49,52,61);
-        --backgroundwhite: rgb(237,237,246);
-    }
-
-    body
+:root
     {
-        margin: 0 auto;
-        max-width: 1280px;
-        background-color: var(--backgroundwhite);
+         --softblue: rgb(146,204,205);
+         --darkblue: rgb(68,88,118);
+         --currentgrey: rgb(49,52,61);
+         --backgroundwhite: rgb(237,237,246);
     }
 
-/*spacing*/
-
-/*This is the header section contains the navigation bar and title for the page*/
-    header
+body
     {
         display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        height: 150vh;
+        width: 100vw;
+        max-width: 1280px;
+        max-height: 1920px;
+    }
+
+header
+    {
+        display:flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
-        flex-basis: 100%;
-        height: 150px;
+        height: 200px;
+        width: 100%;
         background-color: var(--currentgrey);
     }
+    .page_title
+        {
+            flex-basis: 40%;
+        }
+        .page_title h1
+            {
+                width: auto;
+                padding: 0 0 0 30px;
+                background-color: var(--softblue);
+            }
+        .page_title h2
+            {
+                margin: 0 0 0 30%;
+                color: var(--softblue);
+            }
 
-    header  h1
-    {
-        padding-left: 5%;
-        background-color: var(--softblue);
-        padding-right: .5%;
-        margin-right: 2.5%;
-    }
+    nav
+        {
+            padding: 20px;
+        }
+        nav a
+            {
+                margin: 5px;
+                color: var(--softblue);
+                text-decoration: none;
+            }
+/*Header Section End*/
 
-    header nav 
-    {
-        padding-left: 25px;
-        flex-direction: row;
-        margin-right: 2.5%;
-    }
-
-    header nav a
-    {
-        margin-right: 15px;
-        color: var(--softblue);
-        text-decoration: none;
-        padding: 5px;
-        border-bottom: 3px solid var(--softblue);
-    }
-
-/*spacing*/
-
-/*This section holdst the subheader wich should be a hidden profile picture*/
-    .profile-picture 
+.bio
     {
         display: flex;
-        flex-basis: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 350px;
+        width: 100%;
         background-image: url(images/pawel-czerwinski-background-pattern.jpg);
         background-size: cover ;
     }
+    .bio h2
+        {
+        
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            height: 50px;
+            width: 150px;
+            padding: 0 20px 0 50px;
+            color: var(--darkblue);
+            background-color: var(--softblue);
+        }
+    .bio p
+        {
+            padding: 5px;
+            margin: 0 0 0 50px;
+            height: 150px;
+            width: 350px;
+            border-radius: 15px;
+            border: 5px solid var(--darkblue);
+            
+        }
+    .bio img
+            {
+                margin: auto 0;
+                margin-left: -300px;
+                align-self: flex-start;
+                height: 250px;
+                border-radius: 15px;
+                border: 5px solid var(--softblue);
+            }
+/*Bio Section End*/
 
-    .profile-picture h2
+main
     {
-        order: 2;
-        color: var(--darkblue);
-        padding: 5px;
-        border-radius: 2px;
-        margin-left: 10px;
-        align-self: flex-end;
-        justify-self: right ;
-        background:var(--softblue);
+        border-top: 5px solid black;
+        height: 700px;
+        width: 100%;
 
     }
+    main h2
+        {
+            text-align: center;
+            margin: 10px auto;
+            width: 150px;
+            height: 30px;
+            color: var(--darkblue);
+            border-bottom: 5px solid var(--darkblue);
+        }
+    .project-container
+        {
+            display:grid;
+            grid-template-columns:49% 49%;
+            grid-template-rows: 50% 49%;
+            column-gap: 10px;
+            row-gap: 10px;
+            width: 100%;
+            height: 650px;
+        }
+        .project-container div
+            {
+                display: flex;
+                border-radius: 5px;
+                border: 10px solid var(--darkblue);
+                background-size: cover;
+            }
+        .project-container div h3
+            {
+                align-self: flex-end;
+                padding: 10px;
+                width: fit-content;
+                color: var(--softblue);
+                background-color: var(--softblue);
+            }
+        #first-project
+            {
+                z-index: 1;
+                grid-column: 1/ 3;
+                grid-row: 1/3;
+            }
+        #day-planner
+            {
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+        #weather-dashboard
+            {
+                grid-column: 2/3;
+                grid-row: 2/3;
+            }
+        
+/*Main Section End*/
 
-    .profile-picture img
-    {        
-        margin: 10px 5px 10px 35%;
-        border: 5px solid var(--softblue);
-        border-radius: 15px;
-        max-width: 30%;   
-    }
-/*spacing*/
-
-/*This section holds the about me portion of the portfolio*/
-    .bio-box
+footer
     {
-        display: flex;
-        justify-content:space-between;
+        border-top: 5px solid var(--currentgrey)
     }
-
-    .bio-box h2
+    footer h2
     {
-        align-self: center;
-        flex-basis: 30px;
-        padding: 0px 15px 0px 63px;
-        color: var(--darkblue);
-        text-align: right;
-
-    }
-
-    .bio-box p
-    {
-        border-left: 5px solid var(--darkblue);
-        height: 100%;
-        padding: 10px 0px 10px 20px;
-        color: var(--darkblue);
-    }
-
-/*spacing*/
-
-/*This section holds the main section of the site with images representing the projects*/
-    .core-content
-    {
-        display:flex;
-    }
-
-    .core-content h2
-    {
-        flex-basis: 30px;
-        padding: 15px 15px 15px 69px;
-        color: var(--darkblue);
-    }
-    .core-content .project-container 
-    {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border-left: 5px solid var(--darkblue);
-        height: 100%;
-        padding: 10px 10px 10px 25px;
-       
-    }
-
-    .core-content .project-container .project-card
-    {
-        display: flex;
-        width:350px;
-        height: 250px;
-        background-size: cover;
-        border: 5px solid var(--softblue);
-        margin: 0 0 10px 10px;
-        flex: 0 0 40%;
-    }
-
-    .core-content .project-container .project-card  h3 
-    {
-        align-self: flex-end;
         text-align: center;
-        flex-basis: 25%;
-        height:auto;
-        padding: 15px;
-        background: var(--softblue);
-
-    }
-
-    .core-content  .project-container .project-card h3 a 
-    {
+        margin: 30px auto 0 auto;
+        width: 250px;
+        height: 30px;
         color: var(--darkblue);
-        text-decoration: none;
+        border-bottom: 5px solid var(--darkblue);
     }
-  
-    .core-content .project-container  #first-project 
-    {
-        flex:0 0 82.22%;
-    }
+    footer div
+        {
+            display: flex;
+            justify-content: space-around;
+        }
+    footer div p 
+        {
+            color:var(--darkblue);  
+            border-bottom: 3px solid var(--darkblue);
+        }
+/*Footer Section End*/
+/*
 
-
-/*spacing*/
-
-/*This Section should contian most of the information for the footer file.*/
-    .end-page-footer
-    {
-        display: flex ;
-        text-align: right;
-        align-items: center;
-
-    }
-
-    .end-page-footer h2
-    {
-        flex-basis: 30px;
-        flex-wrap: wrap;
-        color: var(--darkblue);
-        padding: 15px 15px 15px  30px;
-    }
-
-    .end-page-footer section
-    {
-        display: flex;
-        flex-basis: 70%;
-        justify-content: space-evenly;
-        border-left: 5px solid var(--darkblue);
-        padding: 25px;
-    }
-
-    .end-page-footer section p 
-    {  
-        color:var(--darkblue);
-        text-decoration: none;
-        padding: 5px;
-        border-bottom: 3px solid var(--darkblue);
-    }
-
-/*spacing*/
-
-/*This media query determins how the project cards will adjust when the screen is manipulated into a smaller size*/
     @media only screen and (max-width: 780px) 
     {
         .core-content .project-container .project-card
@@ -215,4 +192,4 @@
         }   
     }
 
-/*spacing*/
+*/

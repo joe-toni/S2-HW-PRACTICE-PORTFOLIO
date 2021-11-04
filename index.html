@@ -5,25 +5,21 @@
         <title>Jose Faburrieta Practice Portfolio</title>
         <link rel= "stylesheet" href="./sources/style.css">
     </head>
-    <body>
-        
-        <header >
-            <h1 >JOSE FABURRIETA</h1>
+    
+    <body> 
+        <header>
+            <div class = "page_title">
+            <h1>JOSE FABURRIETA</h1>
+            <h2> MULTIMEDIA DEVELOPER</h2>
+            </div>
             <nav >
                  <a  href = "#bio">About Me</a>
-                
-                 <a href = "#work-display">Work</a>
-                 
-                 <a href= "#contact-info">Personal Info</a>
+                 <a href = "#work_display">Work</a>
+                 <a href= "#contact_info">Personal Info</a>
             </nav>
         </header>
 
-        <section class= "profile-picture">
-            <h2> MULTIMEDIA DEVELOPER</h2>
-            <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
-        </section>
-
-        <section  id= "bio" class = "bio-box">
+        <section class= "bio">
             <h2>ABOUT ME</h2>
             <p>
                My name is J.A. Faburrieta and am currently working on becoming a web developer.
@@ -31,37 +27,35 @@
                since college.  Along with progaming I enjoy sculpting and writing in my free time and 
                the hope is that I will be able to combine these passions in a programing format. 
             </p>
+            <img src= "sources/images/smaller-profile-pic.jpg" alt = " Profile Image">
         </section>
 
-        <main  id =  "work-display" class ="core-content">
+        <main  id ="work_display" class ="core_content">
             <h2> WORK</h2>
-           
-            <section class= "project-container">
+            <div class= "project-container">
                 <div style=  "background-image: url(sources/images/There_And_Back_Original_Screenshot.png);"
                      class= "project-card" id= "first-project">
                     <h3><a href="https://lordlowdar.github.io/thereandback/"> FIRST PROJECT</a> </h3> 
                 </div>
             
                 <div style=  "background-image: url(sources/images/Work_Day_Scheduler_Original_Screenshot.png);"
-                    class= "project-card">
+                    class= "project-card" id = "day-planner">
                     <h3><a href= "https://joe-toni.github.io/S5-HW-WORK-DAY-PLANNER/" >DAY PLANNER</a></h3> 
                 </div>
 
                 <div style=  "background-image: url(sources/images/Weather_Dashboard_Original_Screenshot.png);"
-                    class= "project-card">
+                    class= "project-card" id= "weather-dashboard">
                     <h3> <a href= "https://joe-toni.github.io/S6-HW-WEATHER-DASHBOARD/">WEATHER DASHBOARD</a></h3> 
-                </div>     
-
-
+                </div>
+            </div>
         </main>
 
         <footer id= "contact-info" class = "end-page-footer">
             <h2> CONTACT INFO </h2>
-            <section>
+            <div class = "personal_links">
                 <p>123-456-0789</p>
-
-                <p>nopostingmyactualemailyet@nothankyou.com</p>               
-            </section> 
+                <p>joefaburrieta@gmail.com</p>               
+            </div>
         </footer>
         
     
