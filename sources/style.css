@@ -1,3 +1,4 @@
+/*Custom Color Variables*/
 :root
     {
          --softblue: rgb(146,204,205);
@@ -5,7 +6,7 @@
          --currentgrey: rgb(49,52,61);
          --backgroundwhite: rgb(237,237,246);
     }
-
+/*Styling for the Whole Page container*/
 body
     {
         background-color: var(--backgroundwhite);
@@ -17,7 +18,7 @@ body
         max-width: 1280px;
         max-height: 1920px;
     }
-
+/*Header Styling for Title and Nav bar*/
 header
     {
         display:flex;
@@ -55,7 +56,7 @@ header
                 text-decoration: none;
             }
 /*Header Section End*/
-
+/*Bio Section Styling for About me and Profile Picture*/
 .bio
     {
         display: flex;
@@ -65,9 +66,9 @@ header
         background-size: cover ;
     }
     .mini
-    {
-        height: 100px;
-    }
+        {
+            height: 100px;
+        }
     .bio h2
         {
         
@@ -107,11 +108,11 @@ header
                 border: 5px solid var(--softblue);
             }
     .bio .hideMe
-    {
-        display: none;
-    }
+        {
+            display: none;
+        }
 /*Bio Section End*/
-
+/*Main Section Styling for Project Displays*/
 main
     {
         border-top: 5px solid black;
@@ -162,7 +163,8 @@ main
             grid-column: 1/3;
             grid-row: 1/3;
         }
-    /*Initial Main Section End*/        
+    /*Initial Main Section End*/
+    /*General styling for all project card classes*/        
     .project-card
         {
             display: flex;
@@ -198,30 +200,30 @@ main
             }
     /*Project Card Section End*/
 /*Main Section End*/
-
+/*Styling for the Contact Information portion of the page*/
     footer
-    {
-        margin-top: 10px;
-    }
-    footer h2
-    {
-        text-align: center;
-        margin: 30px auto 20px auto;
-        width: 250px;
-        height: 30px;
-        color: var(--darkblue);
-        border-bottom: 5px solid var(--darkblue);
-    }
-    footer div
         {
-            padding: 20px 0 50px 0;
-            display: flex;
-            justify-content: space-around;
+            margin-top: 10px;
         }
-    footer div a 
-        {
-            color:var(--darkblue);  
-            border-bottom: 3px solid var(--darkblue);
-        }
+        footer h2
+            {
+                text-align: center;
+                margin: 30px auto 20px auto;
+                width: 250px;
+                height: 30px;
+                color: var(--darkblue);
+                border-bottom: 5px solid var(--darkblue);
+            }
+        footer div
+            {
+                padding: 20px 0 50px 0;
+                display: flex;
+                justify-content: space-around;
+            }
+        footer div a 
+            {
+                color:var(--darkblue);  
+                border-bottom: 3px solid var(--darkblue);
+            }
 /*Footer Section End*/
 
